@@ -22,4 +22,110 @@ img {
 /* Tu código va aquí */
 body {
   font-size: 1.6rem;
+  background-color: white;
+
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+  padding: 3.2rem;
+  justify-content: space-between;
+}
+
+.titulo{
+  color: #1a1a1a ;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+}
+
+.contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.8rem;
+  font-size: 1.2rem;
+  list-style: none;
+  text-decoration: none;
+}
+.contenedor li a{
+  text-decoration: none;
+  list-style: none;
+}
+
+.reserva{
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.6rem;
+}
+
+.info{
+  background-color: #000000;
+  padding: 3.2 rem 6.4rem;
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.etiqueta-sup{
+  color: #c0392b;
+  border: 0.1rem solid rgba(192, 57, 43, 0.5) ;
+  font-size: 1rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.titulo-h1{
+  color: #ffffff;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+
+.contenedor-btn{
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.btn-primario{
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 2.2rem;
+  border-radius: 0.6rem;
+  background-size: cover;
+}
+
+.btn-secundario{
+  background-color: transparent;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2) ;
+  color: #cccccc;
+  font-size: 1.2rem;
+  padding: 1rem 1.8rem;
+  border-radius: 0.6rem;
+}
+
+.menus{
+  background-color: #ffffff;
+  padding: 4.8rem 3.2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+}
+.menus h2{
+  font-size: 2.2rem;
+  font-weight: bold;
 }
