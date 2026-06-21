@@ -23,7 +23,8 @@ img {
 body {
   font-size: 1.6rem;
   background-color: white;
-
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .navbar{
@@ -117,15 +118,451 @@ body {
   border-radius: 0.6rem;
 }
 
+/*header menu*/
 .menus{
   background-color: #ffffff;
   padding: 4.8rem 3.2rem;
+}
+
+.menu-header{
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 2.8rem;
+}
+
+.menu-izquierda h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitulo{
+  font-size: 1rem;
+  color: #c0392b;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.menu-header a{
+  font-size: 1.2rem;
+  color: #555555;
+  border-bottom: 0.1rem solid #e0ddd5;
+  text-decoration: none;
+}
+
+.menu-header a:hover{
+  color: #c0392b;
+  border-color: #c0392b;
+}
+
+.cards{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.card{
+  flex-basis: 25%;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img{
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0 0.4rem 0;
+}
+
+.card p{
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.precio{
+  color: #c0392b;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card button{
+  width: 2rem;
+  height: 2rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card button:hover{
+  background-color: #c0392b;
+}
+
+/* mas pedids*/
+.mas-pedidos{
+  background-color: #f2f0eb;
+  padding: 4.8rem 3.2rem;
+  border-top: 0.1rem solid #e0ddd5;
+  border-bottom: 0.1rem solid #e0ddd5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.mas-pedidos-info{
+  flex-basis: 28rem;
+  flex-shrink: 0;
+  margin-right: 4.8rem;
+}
+
+.etiqueta{
+  color: #c0392b;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.6rem;
+  display: block;
+
+}
+
+.mas-pedidos-info h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.mas-pedidos-info p{
+  font-size: 1.2rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+.lista-pedidos{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  flex: 1;
+}
+
+.item-pedido{
+  display: flex;
+  align-items: center;
+
+  padding: 1.2rem 0;
+  border-bottom: 0.1rem solid #e0ddd5;
+}
+
+.item-pedido img{
+  width: 5.2rem;
+  height: 5.2rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-right: 1.4rem;
+}
+
+.info-texto h3{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.info-texto small{
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+.meta{
+  margin-left: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.precio{
+  color: #c0392b;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.meta small{
+  font-size: 1rem;
+  color: #555555;
+}
+
+/* sobre nosotros */
+.sobre-nosotros{
+  background-color: #ffffff;
+  padding: 4.8rem 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sobre-texto{
+  flex-basis: 45%;
+}
+
+.sobre-texto .etiqueta{
+  color: #c0392b;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.sobre-texto h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+.sobre-texto p{
+  font-size: 1.3rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.sobre-stats{
+  flex-basis: 45%;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.stat{
+  flex-basis: 33.33%;
+  text-align: center;
+  padding: 2rem 1.6rem;
+
+  background-color: #ffffff;
+  border-right: 0.1rem solid #e0ddd5;
+}
+
+.stat:last-child{
+  border-right: none;
+}
+
+.numero{
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  display: block;
+}
+
+.stat small{
+  font-size: 1.1rem;
+  color: #555555;
+  margin-top: 0.4rem;
+  display: block;
+}
+
+/*contactanos*/
+.contacto{
+  background-color: #f2f0eb;
+  padding: 4.8rem 3.2rem;
+  border-top: 0.1rem solid #e0ddd5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contacto-info{
+  flex-basis: 40%;
+}
+
+.contacto-info .etiqueta{
+  color: #c0392b;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.contacto-info h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+.contacto-info p{
+  font-size: 1.3rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+
+.contacto-lista{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+.contacto-lista li{
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 1rem;
+}
+
+.contacto-lista a{
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.contacto-formulario{
+  flex-basis: 50%;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  padding: 2.4rem;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label{
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 0.4rem;
+}
+
+.formulario input,
+.formulario textarea{
+  background-color: #f9f8f5;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.formulario button{
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  width: 100%;
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+
+.formulario button:hover{
+  background-color: #1a1a1a;
+}
+
+/* Footer */
+.footer{
+  background-color: #111111;
+  padding: 3.6rem 3.2rem 2rem;
+}
+
+.footer-columnas{
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 2.8rem;
 }
-.menus h2{
-  font-size: 2.2rem;
+
+.footer-brand{
+  flex-basis: 35%;
+}
+
+.footer-brand h3{
+  color: #ffffff;
+  font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.footer-brand p{
+  color: #666666;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.footer-col{
+  flex-basis: 18%;
+}
+
+.footer-col h4{
+  color: #999999;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.footer-col ul{
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li{
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.9;
+}
+
+.footer-bottom{
+  border-top: 0.1rem solid #222222;
+  padding-top: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom p{
+  font-size: 1rem;
+  color: #444444;
+}
+
+.redes{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.redes li{
+  margin-right: 1.6rem;
+  font-size: 1rem;
+  color: #444444;
 }
